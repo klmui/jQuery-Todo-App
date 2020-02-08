@@ -1,3 +1,11 @@
+body {
+    font-size: 16px;
+    font-family: roboto;
+    background: #00F260;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0575E6, #00F260);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0575E6, #00F260); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 h1 {
     background: #2980b9;
     color: white;
@@ -8,22 +16,10 @@ h1 {
     font-weight: normal;
 }
 
-.fa-plus {
-    float: right;
-}
-
 ul {
     list-style: none;
     margin: 0;
     padding: 0;
-}
-
-body {
-    font-size: 16px;
-    font-family: roboto;
-    background: #00F260;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #0575E6, #00F260);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #0575E6, #00F260); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 li {
@@ -31,11 +27,6 @@ li {
     height: 40px;
     line-height: 40px; /* Line now takes up the entire 40px */
     color: #666;
-}
-
-/* Targets every other li */
-li:nth-child(2n) {
-    background: #f7f7f7;
 }
 
 span {
@@ -48,6 +39,15 @@ span {
     display: inline-block; /* inline-block respects the top and bottom paddings */
     transition: 0.2s linear; /* linear means that it will move at a constant speed */
     opacity: 0;
+}
+
+.fa-plus {
+    float: right;
+}
+
+/* Targets every other li */
+li:nth-child(2n) {
+    background: #f7f7f7;
 }
 
 li:hover span {
